@@ -1,0 +1,119 @@
+//
+//  PrefixHeader.pch
+//  catch
+//
+//  Created by 寒山 on 2018/1/2.
+//  Copyright © 2018年 catch. All rights reserved.
+//
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "NSUserDefaults+UDFindextype.h"
+#import "UIColor+Hex.h"
+#import "ShowMessage.h"
+#import "NSObject+Add.h"
+#import "UIView+Frame.h"
+#import "Masonry.h"
+//#import "YRJSONAdapter.h"
+#import "UIImageView+HighlightedWebCache.h"
+#import "UIImageView+WebCache.h"
+#import "MJExtension.h"
+#import "NSDictionary+FQUtil.h"
+#import "NSDictionary+SMC.h"
+#import "NSString+StringConnection.h"
+#import "NSMutableDictionary+SMC.h"
+#import "AppDelegate.h"
+#import "ShowMessage.h"
+#import "UIView+Toast.h"
+#import "UIView+Frame.h"
+#import "WiFiListDB.h"
+#import "NSDate+Common.h"
+#define DF_app AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+
+#define UDF_default NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults]
+
+
+//微信登录
+#define wechatAppKeyPro     @"wx71d9df882180b360"
+#define wechatAppSecretPro  @"f7e36f9da6344c6d47e3a61ef2dd6048"
+#define UMENG_KEYPro  @"5a5858b1b27b0a30e300015a"
+
+#define DF_app AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+
+// 屏幕宽
+#define UIScreenW [[UIScreen mainScreen]bounds].size.width
+// 屏幕高
+#define UIScreenH [[UIScreen mainScreen]bounds].size.height
+
+
+#define SMCIntToNumber(value)     [NSNumber numberWithInt:value]
+#define SMCLongToNumber(value)    [NSNumber numberWithLong:value]
+#define SMCFloatToNumber(value)   [NSNumber numberWithFloat:value]
+#define SMCBoolToNumber(value)    [NSNumber numberWithBool:value]
+
+
+#define IS_IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0)
+
+#define RGBA_COLOR(r, g, b, a)   ([UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a])
+
+#define IS_String(a) (a && ![a isKindOfClass:[NSNull class]] && [a isKindOfClass:[NSString class]] && a.length)
+#define IS_Array(a) (a && [a isKindOfClass:[NSArray class]] && a.count)
+
+
+#define DF_View_changeFrame_height(view,height) view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, height)
+#define DF_nowheight(a) (a.frame.origin.y + a.frame.size.height)
+
+// block self
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+
+#define IOS9_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+
+#define FONT_MEDDIUM(X) IOS9_OR_LATER?[UIFont fontWithName:@"PingFangSC-Medium" size:X]:[UIFont systemFontOfSize:X]
+#define FONT_REGULAR(X) IOS9_OR_LATER?[UIFont fontWithName:@"PingFangSC-Regular" size:X]:[UIFont systemFontOfSize:X]
+
+#define FONT_BOLD(X) IOS9_OR_LATER?[UIFont fontWithName:@"PingFangSC-Semibold" size:X]:[UIFont boldSystemFontOfSize:X]
+
+//16进制颜色转换
+#define COLOR_WITH_16BAND_RGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define COLOR_WITH_16BAND_RGBA(rgbValue, al) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:al]
+
+
+#define PAGESIZE 10
+
+// 定义通用颜色
+#define kBlackColor         [UIColor blackColor]
+#define kDarkGrayColor      [UIColor darkGrayColor]
+#define kLightGrayColor     [UIColor lightGrayColor]
+#define kWhiteColor         [UIColor whiteColor]
+#define kGrayColor          [UIColor grayColor]
+#define kRedColor           [UIColor redColor]
+#define kGreenColor         [UIColor greenColor]
+#define kBlueColor          [UIColor blueColor]
+#define kCyanColor          [UIColor cyanColor]
+#define kYellowColor        [UIColor yellowColor]
+#define kMagentaColor       [UIColor magentaColor]
+#define kOrangeColor        [UIColor orangeColor]
+#define kPurpleColor        [UIColor purpleColor]
+#define kClearColor         [UIColor clearColor]
+
+#define kRandomFlatColor    [UIColor randomFlatColor]
+
+#define MAIN_BG_Color COLOR_WITH_16BAND_RGB(0x232323)
+#define MAIN_TEXT_Color RGBA_COLOR(51,51, 51, 1.0)  
+#define SMALL_TEXT_Color RGBA_COLOR(153,153, 153, 1.0)
+
+#define CONTENTDBNAME @"WIFI.sqlite"
+//#define MAIN_BG_Color  COLOR_WITH_16BAND_RGB(0xF3F3F3)
+//#define MAIN_Pink_Color  COLOR_WITH_16BAND_RGB(0xF70069)
+//#define MAIN_DARK_BLACK_Color  COLOR_WITH_16BAND_RGB(0x232323)
+//#define MAIN_LIGHT_BLACK_Color  COLOR_WITH_16BAND_RGB(0x999999)
+//#define MAIN_LIGHT_GAAY_Color  COLOR_WITH_16BAND_RGB(0x666666)
+//#define UserInfoSignatureCell_PaddingLeftWidth 34.0
+
+#endif
+#endif /* PrefixHeader_pch */
+
+
+

@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59480B1039CD171ACF692892 /* Pods_wifiKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA0A5902AD007FFB0912CF0 /* Pods_wifiKey.framework */; };
+		AB9E0643201ACD1E00AFAA4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0642201ACD1E00AFAA4D /* AppDelegate.m */; };
+		AB9E064B201ACD1E00AFAA4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9E064A201ACD1E00AFAA4D /* Assets.xcassets */; };
+		AB9E0651201ACD1E00AFAA4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0650201ACD1E00AFAA4D /* main.m */; };
+		AB9E0659201ACD6900AFAA4D /* WifiListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0658201ACD6900AFAA4D /* WifiListViewController.m */; };
+		AB9E065C201ACD7800AFAA4D /* AddWifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E065B201ACD7800AFAA4D /* AddWifiViewController.m */; };
+		AB9E0661201ACE0D00AFAA4D /* WifiListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0660201ACE0D00AFAA4D /* WifiListTableViewCell.m */; };
+		AB9E068D201ACECF00AFAA4D /* NSArray+PropertyList.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0667201ACECF00AFAA4D /* NSArray+PropertyList.m */; };
+		AB9E068E201ACECF00AFAA4D /* NSDictionary+FQUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0669201ACECF00AFAA4D /* NSDictionary+FQUtil.m */; };
+		AB9E068F201ACECF00AFAA4D /* NSDictionary+SMC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E066B201ACECF00AFAA4D /* NSDictionary+SMC.m */; };
+		AB9E0690201ACECF00AFAA4D /* NSMutableDictionary+SMC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E066D201ACECF00AFAA4D /* NSMutableDictionary+SMC.m */; };
+		AB9E0691201ACECF00AFAA4D /* NSNull+InternalNullExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E066F201ACECF00AFAA4D /* NSNull+InternalNullExtention.m */; };
+		AB9E0692201ACECF00AFAA4D /* NSObject+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0671201ACECF00AFAA4D /* NSObject+Add.m */; };
+		AB9E0693201ACECF00AFAA4D /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0673201ACECF00AFAA4D /* NSString+Extension.m */; };
+		AB9E0694201ACECF00AFAA4D /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0675201ACECF00AFAA4D /* NSString+MD5.m */; };
+		AB9E0695201ACECF00AFAA4D /* NSString+StringConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0677201ACECF00AFAA4D /* NSString+StringConnection.m */; };
+		AB9E0696201ACECF00AFAA4D /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0679201ACECF00AFAA4D /* NSString+URL.m */; };
+		AB9E0697201ACECF00AFAA4D /* NSUserDefaults+UDFindextype.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E067B201ACECF00AFAA4D /* NSUserDefaults+UDFindextype.m */; };
+		AB9E0698201ACECF00AFAA4D /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E067D201ACECF00AFAA4D /* UIColor+Hex.m */; };
+		AB9E0699201ACECF00AFAA4D /* UIImageView+MJWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E067F201ACECF00AFAA4D /* UIImageView+MJWebCache.m */; };
+		AB9E069A201ACECF00AFAA4D /* UILabel+border.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0681201ACECF00AFAA4D /* UILabel+border.m */; };
+		AB9E069B201ACECF00AFAA4D /* UILabel+StringFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0683201ACECF00AFAA4D /* UILabel+StringFrame.m */; };
+		AB9E069C201ACECF00AFAA4D /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0685201ACECF00AFAA4D /* UIView+Extend.m */; };
+		AB9E069D201ACECF00AFAA4D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0687201ACECF00AFAA4D /* UIView+Frame.m */; };
+		AB9E069E201ACECF00AFAA4D /* UIView+Option.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E0689201ACECF00AFAA4D /* UIView+Option.m */; };
+		AB9E069F201ACECF00AFAA4D /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E068B201ACECF00AFAA4D /* UIView+Toast.m */; };
+		AB9E06A2201AD02800AFAA4D /* ShowMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E06A0201AD02700AFAA4D /* ShowMessage.m */; };
+		AB9E06A5201AD17200AFAA4D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E06A4201AD17200AFAA4D /* BaseViewController.m */; };
+		AB9E06A7201ADC5F00AFAA4D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9E06A6201ADC5F00AFAA4D /* Default-568h@2x.png */; };
+		AB9E06AA201B0D1600AFAA4D /* WiFiListDB.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E06A9201B0D1600AFAA4D /* WiFiListDB.m */; };
+		AB9E06AD201B0D4200AFAA4D /* JRUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E06AB201B0D4200AFAA4D /* JRUtility.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AB9E06B0201B0D6C00AFAA4D /* WiFiInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E06AF201B0D6C00AFAA4D /* WiFiInfoModel.m */; };
+		AB9E06B3201B119800AFAA4D /* YMDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E06B2201B119800AFAA4D /* YMDateTool.m */; };
+		AB9E06B6201B140700AFAA4D /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E06B5201B140700AFAA4D /* NSDate+Common.m */; };
+		AB9E06B8201B19BD00AFAA4D /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB9E06B7201B19BD00AFAA4D /* loading.gif */; };
+		AB9E06BB201B19F100AFAA4D /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E06BA201B19F100AFAA4D /* GiFHUD.m */; };
+		AB9E06BE201B1A1F00AFAA4D /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9E06BD201B1A1F00AFAA4D /* LoadingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4AA0A5902AD007FFB0912CF0 /* Pods_wifiKey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wifiKey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		656E3A37B38F0ACF5AB7537C /* Pods-wifiKey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wifiKey.release.xcconfig"; path = "Pods/Target Support Files/Pods-wifiKey/Pods-wifiKey.release.xcconfig"; sourceTree = "<group>"; };
+		AB9E063E201ACD1E00AFAA4D /* wifiKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wifiKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9E0641201ACD1E00AFAA4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB9E0642201ACD1E00AFAA4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB9E064A201ACD1E00AFAA4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB9E064F201ACD1E00AFAA4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9E0650201ACD1E00AFAA4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB9E0657201ACD6900AFAA4D /* WifiListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WifiListViewController.h; sourceTree = "<group>"; };
+		AB9E0658201ACD6900AFAA4D /* WifiListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WifiListViewController.m; sourceTree = "<group>"; };
+		AB9E065A201ACD7800AFAA4D /* AddWifiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddWifiViewController.h; sourceTree = "<group>"; };
+		AB9E065B201ACD7800AFAA4D /* AddWifiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddWifiViewController.m; sourceTree = "<group>"; };
+		AB9E065F201ACE0D00AFAA4D /* WifiListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WifiListTableViewCell.h; sourceTree = "<group>"; };
+		AB9E0660201ACE0D00AFAA4D /* WifiListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WifiListTableViewCell.m; sourceTree = "<group>"; };
+		AB9E0662201ACE8000AFAA4D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AB9E0666201ACECF00AFAA4D /* NSArray+PropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PropertyList.h"; sourceTree = "<group>"; };
+		AB9E0667201ACECF00AFAA4D /* NSArray+PropertyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PropertyList.m"; sourceTree = "<group>"; };
+		AB9E0668201ACECF00AFAA4D /* NSDictionary+FQUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FQUtil.h"; sourceTree = "<group>"; };
+		AB9E0669201ACECF00AFAA4D /* NSDictionary+FQUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FQUtil.m"; sourceTree = "<group>"; };
+		AB9E066A201ACECF00AFAA4D /* NSDictionary+SMC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SMC.h"; sourceTree = "<group>"; };
+		AB9E066B201ACECF00AFAA4D /* NSDictionary+SMC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SMC.m"; sourceTree = "<group>"; };
+		AB9E066C201ACECF00AFAA4D /* NSMutableDictionary+SMC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SMC.h"; sourceTree = "<group>"; };
+		AB9E066D201ACECF00AFAA4D /* NSMutableDictionary+SMC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SMC.m"; sourceTree = "<group>"; };
+		AB9E066E201ACECF00AFAA4D /* NSNull+InternalNullExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+InternalNullExtention.h"; sourceTree = "<group>"; };
+		AB9E066F201ACECF00AFAA4D /* NSNull+InternalNullExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+InternalNullExtention.m"; sourceTree = "<group>"; };
+		AB9E0670201ACECF00AFAA4D /* NSObject+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Add.h"; sourceTree = "<group>"; };
+		AB9E0671201ACECF00AFAA4D /* NSObject+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Add.m"; sourceTree = "<group>"; };
+		AB9E0672201ACECF00AFAA4D /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		AB9E0673201ACECF00AFAA4D /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		AB9E0674201ACECF00AFAA4D /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		AB9E0675201ACECF00AFAA4D /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		AB9E0676201ACECF00AFAA4D /* NSString+StringConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringConnection.h"; sourceTree = "<group>"; };
+		AB9E0677201ACECF00AFAA4D /* NSString+StringConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringConnection.m"; sourceTree = "<group>"; };
+		AB9E0678201ACECF00AFAA4D /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		AB9E0679201ACECF00AFAA4D /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		AB9E067A201ACECF00AFAA4D /* NSUserDefaults+UDFindextype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+UDFindextype.h"; sourceTree = "<group>"; };
+		AB9E067B201ACECF00AFAA4D /* NSUserDefaults+UDFindextype.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+UDFindextype.m"; sourceTree = "<group>"; };
+		AB9E067C201ACECF00AFAA4D /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		AB9E067D201ACECF00AFAA4D /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		AB9E067E201ACECF00AFAA4D /* UIImageView+MJWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MJWebCache.h"; sourceTree = "<group>"; };
+		AB9E067F201ACECF00AFAA4D /* UIImageView+MJWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MJWebCache.m"; sourceTree = "<group>"; };
+		AB9E0680201ACECF00AFAA4D /* UILabel+border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+border.h"; sourceTree = "<group>"; };
+		AB9E0681201ACECF00AFAA4D /* UILabel+border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+border.m"; sourceTree = "<group>"; };
+		AB9E0682201ACECF00AFAA4D /* UILabel+StringFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+StringFrame.h"; sourceTree = "<group>"; };
+		AB9E0683201ACECF00AFAA4D /* UILabel+StringFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+StringFrame.m"; sourceTree = "<group>"; };
+		AB9E0684201ACECF00AFAA4D /* UIView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
+		AB9E0685201ACECF00AFAA4D /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
+		AB9E0686201ACECF00AFAA4D /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		AB9E0687201ACECF00AFAA4D /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		AB9E0688201ACECF00AFAA4D /* UIView+Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Option.h"; sourceTree = "<group>"; };
+		AB9E0689201ACECF00AFAA4D /* UIView+Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Option.m"; sourceTree = "<group>"; };
+		AB9E068A201ACECF00AFAA4D /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		AB9E068B201ACECF00AFAA4D /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		AB9E06A0201AD02700AFAA4D /* ShowMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMessage.m; sourceTree = "<group>"; };
+		AB9E06A1201AD02700AFAA4D /* ShowMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMessage.h; sourceTree = "<group>"; };
+		AB9E06A3201AD17200AFAA4D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		AB9E06A4201AD17200AFAA4D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		AB9E06A6201ADC5F00AFAA4D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AB9E06A8201B0D1600AFAA4D /* WiFiListDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiFiListDB.h; sourceTree = "<group>"; };
+		AB9E06A9201B0D1600AFAA4D /* WiFiListDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiFiListDB.m; sourceTree = "<group>"; };
+		AB9E06AB201B0D4200AFAA4D /* JRUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRUtility.m; sourceTree = "<group>"; };
+		AB9E06AC201B0D4200AFAA4D /* JRUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRUtility.h; sourceTree = "<group>"; };
+		AB9E06AE201B0D6C00AFAA4D /* WiFiInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiFiInfoModel.h; sourceTree = "<group>"; };
+		AB9E06AF201B0D6C00AFAA4D /* WiFiInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiFiInfoModel.m; sourceTree = "<group>"; };
+		AB9E06B1201B119800AFAA4D /* YMDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDateTool.h; sourceTree = "<group>"; };
+		AB9E06B2201B119800AFAA4D /* YMDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDateTool.m; sourceTree = "<group>"; };
+		AB9E06B4201B140700AFAA4D /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
+		AB9E06B5201B140700AFAA4D /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
+		AB9E06B7201B19BD00AFAA4D /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		AB9E06B9201B19F100AFAA4D /* GiFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiFHUD.h; sourceTree = "<group>"; };
+		AB9E06BA201B19F100AFAA4D /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
+		AB9E06BC201B1A1F00AFAA4D /* LoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		AB9E06BD201B1A1F00AFAA4D /* LoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		C3471776121E2B6B0C6D347E /* Pods-wifiKey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wifiKey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wifiKey/Pods-wifiKey.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB9E063B201ACD1E00AFAA4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59480B1039CD171ACF692892 /* Pods_wifiKey.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2253691B268FB87CF934F7A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0A5902AD007FFB0912CF0 /* Pods_wifiKey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB9E0635201ACD1E00AFAA4D = {
+			isa = PBXGroup;
+			children = (
+				AB9E06A6201ADC5F00AFAA4D /* Default-568h@2x.png */,
+				AB9E0640201ACD1E00AFAA4D /* wifiKey */,
+				AB9E063F201ACD1E00AFAA4D /* Products */,
+				ACA446B4DE2D40806D6F2F48 /* Pods */,
+				2253691B268FB87CF934F7A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB9E063F201ACD1E00AFAA4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E063E201ACD1E00AFAA4D /* wifiKey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB9E0640201ACD1E00AFAA4D /* wifiKey */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E0641201ACD1E00AFAA4D /* AppDelegate.h */,
+				AB9E0642201ACD1E00AFAA4D /* AppDelegate.m */,
+				AB9E06A3201AD17200AFAA4D /* BaseViewController.h */,
+				AB9E06A4201AD17200AFAA4D /* BaseViewController.m */,
+				AB9E06A8201B0D1600AFAA4D /* WiFiListDB.h */,
+				AB9E06A9201B0D1600AFAA4D /* WiFiListDB.m */,
+				AB9E0663201ACECF00AFAA4D /* Catagory(分类模块) */,
+				AB9E065E201ACDF600AFAA4D /* cell */,
+				AB9E065D201ACDE900AFAA4D /* model */,
+				AB9E0657201ACD6900AFAA4D /* WifiListViewController.h */,
+				AB9E0658201ACD6900AFAA4D /* WifiListViewController.m */,
+				AB9E065A201ACD7800AFAA4D /* AddWifiViewController.h */,
+				AB9E065B201ACD7800AFAA4D /* AddWifiViewController.m */,
+				AB9E06BC201B1A1F00AFAA4D /* LoadingViewController.h */,
+				AB9E06BD201B1A1F00AFAA4D /* LoadingViewController.m */,
+				AB9E064A201ACD1E00AFAA4D /* Assets.xcassets */,
+				AB9E06B7201B19BD00AFAA4D /* loading.gif */,
+				AB9E064F201ACD1E00AFAA4D /* Info.plist */,
+				AB9E0650201ACD1E00AFAA4D /* main.m */,
+				AB9E0662201ACE8000AFAA4D /* PrefixHeader.pch */,
+			);
+			path = wifiKey;
+			sourceTree = "<group>";
+		};
+		AB9E065D201ACDE900AFAA4D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E06AE201B0D6C00AFAA4D /* WiFiInfoModel.h */,
+				AB9E06AF201B0D6C00AFAA4D /* WiFiInfoModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AB9E065E201ACDF600AFAA4D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E065F201ACE0D00AFAA4D /* WifiListTableViewCell.h */,
+				AB9E0660201ACE0D00AFAA4D /* WifiListTableViewCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		AB9E0663201ACECF00AFAA4D /* Catagory(分类模块) */ = {
+			isa = PBXGroup;
+			children = (
+				AB9E06B9201B19F100AFAA4D /* GiFHUD.h */,
+				AB9E06BA201B19F100AFAA4D /* GiFHUD.m */,
+				AB9E06B4201B140700AFAA4D /* NSDate+Common.h */,
+				AB9E06B5201B140700AFAA4D /* NSDate+Common.m */,
+				AB9E06B1201B119800AFAA4D /* YMDateTool.h */,
+				AB9E06B2201B119800AFAA4D /* YMDateTool.m */,
+				AB9E06AC201B0D4200AFAA4D /* JRUtility.h */,
+				AB9E06AB201B0D4200AFAA4D /* JRUtility.m */,
+				AB9E06A1201AD02700AFAA4D /* ShowMessage.h */,
+				AB9E06A0201AD02700AFAA4D /* ShowMessage.m */,
+				AB9E0666201ACECF00AFAA4D /* NSArray+PropertyList.h */,
+				AB9E0667201ACECF00AFAA4D /* NSArray+PropertyList.m */,
+				AB9E0668201ACECF00AFAA4D /* NSDictionary+FQUtil.h */,
+				AB9E0669201ACECF00AFAA4D /* NSDictionary+FQUtil.m */,
+				AB9E066A201ACECF00AFAA4D /* NSDictionary+SMC.h */,
+				AB9E066B201ACECF00AFAA4D /* NSDictionary+SMC.m */,
+				AB9E066C201ACECF00AFAA4D /* NSMutableDictionary+SMC.h */,
+				AB9E066D201ACECF00AFAA4D /* NSMutableDictionary+SMC.m */,
+				AB9E066E201ACECF00AFAA4D /* NSNull+InternalNullExtention.h */,
+				AB9E066F201ACECF00AFAA4D /* NSNull+InternalNullExtention.m */,
+				AB9E0670201ACECF00AFAA4D /* NSObject+Add.h */,
+				AB9E0671201ACECF00AFAA4D /* NSObject+Add.m */,
+				AB9E0672201ACECF00AFAA4D /* NSString+Extension.h */,
+				AB9E0673201ACECF00AFAA4D /* NSString+Extension.m */,
+				AB9E0674201ACECF00AFAA4D /* NSString+MD5.h */,
+				AB9E0675201ACECF00AFAA4D /* NSString+MD5.m */,
+				AB9E0676201ACECF00AFAA4D /* NSString+StringConnection.h */,
+				AB9E0677201ACECF00AFAA4D /* NSString+StringConnection.m */,
+				AB9E0678201ACECF00AFAA4D /* NSString+URL.h */,
+				AB9E0679201ACECF00AFAA4D /* NSString+URL.m */,
+				AB9E067A201ACECF00AFAA4D /* NSUserDefaults+UDFindextype.h */,
+				AB9E067B201ACECF00AFAA4D /* NSUserDefaults+UDFindextype.m */,
+				AB9E067C201ACECF00AFAA4D /* UIColor+Hex.h */,
+				AB9E067D201ACECF00AFAA4D /* UIColor+Hex.m */,
+				AB9E067E201ACECF00AFAA4D /* UIImageView+MJWebCache.h */,
+				AB9E067F201ACECF00AFAA4D /* UIImageView+MJWebCache.m */,
+				AB9E0680201ACECF00AFAA4D /* UILabel+border.h */,
+				AB9E0681201ACECF00AFAA4D /* UILabel+border.m */,
+				AB9E0682201ACECF00AFAA4D /* UILabel+StringFrame.h */,
+				AB9E0683201ACECF00AFAA4D /* UILabel+StringFrame.m */,
+				AB9E0684201ACECF00AFAA4D /* UIView+Extend.h */,
+				AB9E0685201ACECF00AFAA4D /* UIView+Extend.m */,
+				AB9E0686201ACECF00AFAA4D /* UIView+Frame.h */,
+				AB9E0687201ACECF00AFAA4D /* UIView+Frame.m */,
+				AB9E0688201ACECF00AFAA4D /* UIView+Option.h */,
+				AB9E0689201ACECF00AFAA4D /* UIView+Option.m */,
+				AB9E068A201ACECF00AFAA4D /* UIView+Toast.h */,
+				AB9E068B201ACECF00AFAA4D /* UIView+Toast.m */,
+			);
+			path = "Catagory(分类模块)";
+			sourceTree = "<group>";
+		};
+		ACA446B4DE2D40806D6F2F48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3471776121E2B6B0C6D347E /* Pods-wifiKey.debug.xcconfig */,
+				656E3A37B38F0ACF5AB7537C /* Pods-wifiKey.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB9E063D201ACD1E00AFAA4D /* wifiKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB9E0654201ACD1E00AFAA4D /* Build configuration list for PBXNativeTarget "wifiKey" */;
+			buildPhases = (
+				F9F1396F51B2CEBD716080E2 /* [CP] Check Pods Manifest.lock */,
+				AB9E063A201ACD1E00AFAA4D /* Sources */,
+				AB9E063B201ACD1E00AFAA4D /* Frameworks */,
+				AB9E063C201ACD1E00AFAA4D /* Resources */,
+				46C230E2BEBF48C03DF36A7A /* [CP] Embed Pods Frameworks */,
+				8016C17E6E63F705CB97765C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wifiKey;
+			productName = wifiKey;
+			productReference = AB9E063E201ACD1E00AFAA4D /* wifiKey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB9E0636201ACD1E00AFAA4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "江稳";
+				TargetAttributes = {
+					AB9E063D201ACD1E00AFAA4D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AB9E0639201ACD1E00AFAA4D /* Build configuration list for PBXProject "wifiKey" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB9E0635201ACD1E00AFAA4D;
+			productRefGroup = AB9E063F201ACD1E00AFAA4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB9E063D201ACD1E00AFAA4D /* wifiKey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB9E063C201ACD1E00AFAA4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9E06B8201B19BD00AFAA4D /* loading.gif in Resources */,
+				AB9E064B201ACD1E00AFAA4D /* Assets.xcassets in Resources */,
+				AB9E06A7201ADC5F00AFAA4D /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46C230E2BEBF48C03DF36A7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wifiKey/Pods-wifiKey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8016C17E6E63F705CB97765C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wifiKey/Pods-wifiKey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F1396F51B2CEBD716080E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB9E063A201ACD1E00AFAA4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9E0659201ACD6900AFAA4D /* WifiListViewController.m in Sources */,
+				AB9E069D201ACECF00AFAA4D /* UIView+Frame.m in Sources */,
+				AB9E065C201ACD7800AFAA4D /* AddWifiViewController.m in Sources */,
+				AB9E069F201ACECF00AFAA4D /* UIView+Toast.m in Sources */,
+				AB9E0695201ACECF00AFAA4D /* NSString+StringConnection.m in Sources */,
+				AB9E0697201ACECF00AFAA4D /* NSUserDefaults+UDFindextype.m in Sources */,
+				AB9E06B6201B140700AFAA4D /* NSDate+Common.m in Sources */,
+				AB9E068F201ACECF00AFAA4D /* NSDictionary+SMC.m in Sources */,
+				AB9E0661201ACE0D00AFAA4D /* WifiListTableViewCell.m in Sources */,
+				AB9E068D201ACECF00AFAA4D /* NSArray+PropertyList.m in Sources */,
+				AB9E06BE201B1A1F00AFAA4D /* LoadingViewController.m in Sources */,
+				AB9E06A5201AD17200AFAA4D /* BaseViewController.m in Sources */,
+				AB9E0692201ACECF00AFAA4D /* NSObject+Add.m in Sources */,
+				AB9E06AA201B0D1600AFAA4D /* WiFiListDB.m in Sources */,
+				AB9E0694201ACECF00AFAA4D /* NSString+MD5.m in Sources */,
+				AB9E0693201ACECF00AFAA4D /* NSString+Extension.m in Sources */,
+				AB9E06A2201AD02800AFAA4D /* ShowMessage.m in Sources */,
+				AB9E0690201ACECF00AFAA4D /* NSMutableDictionary+SMC.m in Sources */,
+				AB9E0651201ACD1E00AFAA4D /* main.m in Sources */,
+				AB9E06B0201B0D6C00AFAA4D /* WiFiInfoModel.m in Sources */,
+				AB9E0691201ACECF00AFAA4D /* NSNull+InternalNullExtention.m in Sources */,
+				AB9E06AD201B0D4200AFAA4D /* JRUtility.m in Sources */,
+				AB9E0698201ACECF00AFAA4D /* UIColor+Hex.m in Sources */,
+				AB9E069E201ACECF00AFAA4D /* UIView+Option.m in Sources */,
+				AB9E0643201ACD1E00AFAA4D /* AppDelegate.m in Sources */,
+				AB9E0699201ACECF00AFAA4D /* UIImageView+MJWebCache.m in Sources */,
+				AB9E068E201ACECF00AFAA4D /* NSDictionary+FQUtil.m in Sources */,
+				AB9E06BB201B19F100AFAA4D /* GiFHUD.m in Sources */,
+				AB9E069C201ACECF00AFAA4D /* UIView+Extend.m in Sources */,
+				AB9E069B201ACECF00AFAA4D /* UILabel+StringFrame.m in Sources */,
+				AB9E069A201ACECF00AFAA4D /* UILabel+border.m in Sources */,
+				AB9E0696201ACECF00AFAA4D /* NSString+URL.m in Sources */,
+				AB9E06B3201B119800AFAA4D /* YMDateTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB9E0652201ACD1E00AFAA4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB9E0653201ACD1E00AFAA4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB9E0655201ACD1E00AFAA4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3471776121E2B6B0C6D347E /* Pods-wifiKey.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBG382YRQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wifiKey/PrefixHeader.pch";
+				INFOPLIST_FILE = wifiKey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fotomen.wifiKey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB9E0656201ACD1E00AFAA4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 656E3A37B38F0ACF5AB7537C /* Pods-wifiKey.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBG382YRQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wifiKey/PrefixHeader.pch";
+				INFOPLIST_FILE = wifiKey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fotomen.wifiKey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB9E0639201ACD1E00AFAA4D /* Build configuration list for PBXProject "wifiKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9E0652201ACD1E00AFAA4D /* Debug */,
+				AB9E0653201ACD1E00AFAA4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB9E0654201ACD1E00AFAA4D /* Build configuration list for PBXNativeTarget "wifiKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9E0655201ACD1E00AFAA4D /* Debug */,
+				AB9E0656201ACD1E00AFAA4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB9E0636201ACD1E00AFAA4D /* Project object */;
+}
